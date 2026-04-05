@@ -6,23 +6,24 @@ from azure.identity import AzureCliCredential
 
 load_dotenv()
 
-credential = AzureCliCredential()
-client = FoundryChatClient(
+credenciais = (
+    AzureCliCredential()
+)  # necessario autenticação via Azure CLI para acessar o Azure Foundry. Certifique-se de estar logado usando `az login` no terminal.
+cliente_foundry = FoundryChatClient(
     project_endpoint=os.getenv("AZURE_FOUNDRY_PROJECT_ENDPOINT"),
     model=os.getenv("AZURE_FOUNDRY_MODEL"),
-    credential=credential,
+    credential=credenciais,
 )
 
-agent = client.as_agent(
-    name="HelloAgent",
-    instructions="You are a friendly assistant. Keep your answers brief.",
+agente = cliente_foundry.as_agent(
+    name="Agente Básico",
+    instructions="Você é um assistente amigável. Mantenha suas respostas breves.",
 )
 
 
 async def main():
-    # Non-streaming: get the complete response at once
-    result = await agent.run("What is the largest city in France?")
-    print(f"Agent: {result}")
+    result = await agente.run("Qual é a maior cidade da França?")
+    print(f"Agente: {result}")
 
 
 if __name__ == "__main__":

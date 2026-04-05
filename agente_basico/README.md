@@ -7,6 +7,7 @@ Exemplo mínimo de um agente usando o **Microsoft Agent Framework (MAF)** com o 
 - Python 3.13+
 - Azure CLI instalado e autenticado (`az login`)
 - Acesso a um projeto no [Azure AI Foundry](https://ai.azure.com)
+  - Cognitive Services OpenAI User ou Azure AI Developer 
 
 ## Instalação
 
