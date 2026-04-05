@@ -1,9 +1,0 @@
-[project]
-name = "maf"
-version = "0.1.0"
-description = "Exploração e exemplos práticos do Microsoft Agent Framework (MAF)"
-readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "agent-framework>=1.0.0",
-]

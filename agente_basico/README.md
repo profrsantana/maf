@@ -5,22 +5,17 @@ Exemplo mínimo de um agente usando o **Microsoft Agent Framework (MAF)** com o 
 ## Pré-requisitos
 
 - Python 3.13+
-- [uv](https://docs.astral.sh/uv/) instalado
 - Azure CLI instalado e autenticado (`az login`)
 - Acesso a um projeto no [Azure AI Foundry](https://ai.azure.com)
 
 ## Instalação
 
-Na raiz do repositório, instale as dependências necessárias:
+Crie e ative um ambiente virtual, depois instale as dependências:
 
 ```bash
-uv add agent-framework azure-identity
-```
-
-Ative o ambiente virtual (caso ainda não esteja ativo):
-
-```bash
+python -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Configuração
