@@ -38,6 +38,7 @@ Acompanhe os artigos publicados sobre o MAF no blog:
 | # | Título | Descrição | Data |
 |---|--------|-----------|------|
 | 1 | [Microsoft Agent Framework Versão 1.0 Lançada](https://profrsantana.github.io/posts/maf/) | Introdução à série — visão geral do MAF, proposta PRO-CODE, foco enterprise e integração com o ecossistema Microsoft | 03/04/2026 |
+| 2 | [Agente básico com Microsoft Agent Framework usando Python](https://profrsantana.github.io/posts/agente_basico/) | Conceito de agentes, enterprise ready e implementação de um agente básico com Python e Azure AI Foundry | 11/04/2026 |
 
 ## Referências
 
