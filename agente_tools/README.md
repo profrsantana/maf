@@ -1,13 +1,18 @@
-# Agente Básico
+# Agente com Tools
 
-Exemplo mínimo de um agente usando o **Microsoft Agent Framework (MAF)** com o Azure AI Foundry. Demonstra como instanciar um cliente Foundry, criar um agente e realizar uma interação simples.
+Exemplo de um agente usando o **Microsoft Agent Framework (MAF)** com a OpenAI e uso de **tools** (funções). O agente consulta a temperatura atual de qualquer cidade usando a [Open-Meteo API](https://open-meteo.com/) — gratuita e sem necessidade de API key.
+
+## Funcionalidades
+
+- Criação de uma **tool** com o decorator `@tool` do MAF
+- Consulta de temperatura real via Open-Meteo API (geocoding + forecast)
+- Conexão com a OpenAI usando `OpenAIChatCompletionClient` (Chat Completions API)
+- Execução assíncrona do agente
 
 ## Pré-requisitos
 
 - Python 3.13+
-- Azure CLI instalado e autenticado (`az login`)
-- Acesso a um projeto no [Azure AI Foundry](https://ai.azure.com)
-  - Cognitive Services OpenAI User ou Azure AI Developer 
+- Conta na [OpenAI](https://platform.openai.com/) com API key
 
 ## Instalação
 
@@ -21,30 +26,22 @@ pip install -r requirements.txt
 
 ## Configuração
 
-No arquivo `agente_basico.py`, substitua os valores de exemplo pelas informações do seu projeto Foundry:
+Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 
-```python
-project_endpoint="https://<seu-servico>.services.ai.azure.com/api/projects/<seu-projeto>"
-model="<modelo-desejado>"
-```
-
-## Autenticação
-
-O exemplo utiliza `AzureCliCredential`, que aproveita a sessão ativa do Azure CLI. Certifique-se de estar autenticado antes de executar:
-
-```bash
-az login
+```env
+OPENAI_API_KEY=sk-...
+OPENAI_MODEL=gpt-4o-mini
 ```
 
 ## Execução
 
 ```bash
-cd agente_basico
-python agente_basico.py
+cd agente_tools
+python agente_tools.py
 ```
 
 ## Referências
 
 - [Documentação do MAF](https://aka.ms/agent-framework)
-- [Azure AI Foundry](https://ai.azure.com)
-- [azure-identity — Documentação](https://learn.microsoft.com/pt-br/python/api/overview/azure/identity-readme)
+- [Open-Meteo API](https://open-meteo.com/)
+- [OpenAI Platform](https://platform.openai.com/)
