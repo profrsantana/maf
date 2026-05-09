@@ -61,10 +61,10 @@ Acompanhe os artigos publicados sobre o MAF no blog:
 
 | # | Título | Descrição | Data |
 |---|--------|-----------|------|
-| 1 | [Microsoft Agent Framework Versão 1.0 Lançada](https://profrsantana.github.io/posts/maf/) | Introdução à série — visão geral do MAF, proposta PRO-CODE, foco enterprise e integração com o ecossistema Microsoft | 03/04/2026 |
-| 2 | [Agente básico com Microsoft Agent Framework usando Python](https://profrsantana.github.io/posts/agente_basico/) | Conceito de agentes, enterprise ready e implementação de um agente básico com Python e Azure AI Foundry | 11/04/2026 |
-| 3 | [Agente com Tools usando Microsoft Agent Framework](https://profrsantana.github.io/posts/agente_tool/) | Uso de tools com o decorator `@tool`, consulta de temperatura real via Open-Meteo API e conexão com a OpenAI | 24/04/2026 |
-| 4 | [Agente com Sessão usando Microsoft Agent Framework](https://profrsantana.github.io/posts/agente_sessao/) | Uso de sessão de conversa com `create_session()` para manter o contexto entre múltiplos turnos de interação | 08/05/2026 |
+| 1 | [Microsoft Agent Framework Versão 1.0 Lançada](https://profrsantana.github.io/posts/maf/?utm_source=github&utm_medium=readme) | Introdução à série — visão geral do MAF, proposta PRO-CODE, foco enterprise e integração com o ecossistema Microsoft | 03/04/2026 |
+| 2 | [Agente básico com Microsoft Agent Framework usando Python](https://profrsantana.github.io/posts/agente_basico/?utm_source=github&utm_medium=readme) | Conceito de agentes, enterprise ready e implementação de um agente básico com Python e Azure AI Foundry | 11/04/2026 |
+| 3 | [Agente com Tools usando Microsoft Agent Framework](https://profrsantana.github.io/posts/agente_tool/?utm_source=github&utm_medium=readme) | Uso de tools com o decorator `@tool`, consulta de temperatura real via Open-Meteo API e conexão com a OpenAI | 24/04/2026 |
+| 4 | [Agente com Sessão usando Microsoft Agent Framework](https://profrsantana.github.io/posts/agente_sessao/?utm_source=github&utm_medium=readme) | Uso de sessão de conversa com `create_session()` para manter o contexto entre múltiplos turnos de interação | 08/05/2026 |
 
 ## Referências
 
